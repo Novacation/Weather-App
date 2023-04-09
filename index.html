@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="keyframes.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="courtain">
+      <header>
+        <h1 class="floatFx">Weather App</h1>
+      </header>
+      <main>
+        <div class="searchbox__container">
+          <label for="#searchbox">Digite a cidade</label>
+          <input id="searchbox" type="text" value="" />
+
+          <button onclick="getResult()" id="btnSearch">Pesquisar</button>
+        </div>
+
+        <section id="dataBox" style="display: none">
+          <span id="tempEl"></span>
+
+          <div class="locationBox">
+            <span id="locationName"></span>
+            <span id="locationDate"></span>
+            <span id="locationLocaltime"></span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+    <script src="./factories/dataElements.js"></script>
+    <script src="./utils/formatDate.js"></script>
+  </body>
+</html>

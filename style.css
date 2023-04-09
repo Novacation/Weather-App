@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  min-height: 100vh;
+  height: auto;
+  background-image: url("./imgs/bg_main.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .courtain {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+}
+
+header h1 {
+  color: antiquewhite;
+  font-size: 2rem;
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  min-height: calc(100vh - 6rem);
+  height: auto;
+  color: antiquewhite;
+}
+
+main .searchbox__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: rgba(5, 5, 5, 0.719);
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 500px;
+  padding: 2rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 0px 0px 5px 4px rgb(8, 8, 8);
+}
+
+main .searchbox__container label {
+  font-size: 1rem;
+  margin: 0px auto;
+  margin-right: 1.9rem;
+  margin-bottom: 0.7rem;
+  text-align: start;
+  width: 80%;
+}
+
+main .searchbox__container input {
+  border-radius: 0.3rem;
+  margin: 0px auto;
+  width: 80%;
+  border-width: 0px;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  outline: none;
+}
+
+main .searchbox__container button {
+  width: 65%;
+  margin: 0px auto;
+  border-radius: 0.3rem;
+  margin-top: 2rem;
+  border-width: 0px;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+#dataBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: rgba(217, 217, 217, 0.751);
+  box-shadow: 0px 0px 10px 0px black;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 500px;
+
+  padding: 1rem;
+}
+
+#dataBox #tempEl {
+  font-size: 4rem;
+  color: rgb(26, 26, 26);
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgb(26, 26, 26);
+}
+
+#dataBox .locationBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(26, 26, 26);
+  font-weight: bold;
+}
+
+#dataBox #locationName {
+  margin-bottom: 1rem;
+}
+/* @media screen and (min-width: 600px) {
+  
+} */
+
+@media (min-width: 1024px) {
+  #dataBox {
+    margin-top: 6rem;
+  }
+
+  #dataBox #tempEl {
+    font-size: 4.5rem;
+  }
+
+  #dataBox .locationBox {
+    font-size: 2.5rem;
+  }
+}
